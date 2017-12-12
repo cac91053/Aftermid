@@ -1,0 +1,25 @@
+package yuchia.com;
+
+import org.omg.CORBA.PUBLIC_MEMBER;
+
+public class Student {
+	String name;//(콜㈙)
+	int english;//(콜㈙)
+	int math;//(콜㈙)
+	int chinese;//(콜㈙)
+
+	public void print() {
+		System.out.println(english + "\t" + math + "\t" + chinese);
+	}
+
+	public Student(String n, int e, int m, int c) {
+		name = n;
+		english = e;
+		math = m;
+		chinese = c;
+	}
+
+	public int getAverage() {
+		return (english + math + chinese) / 3;
+	}
+}
